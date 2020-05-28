@@ -126,6 +126,7 @@ function set_ros_variables {
         ;;
     "dashing")
         ros2_defaults "bionic"
+        DOCKER_BASE_IMAGE=tiryoh/ros2:dashing
         ;;
     "eloquent")
         ros2_defaults "bionic"

@@ -238,6 +238,8 @@ ENV ROS_DISTRO $ROS_DISTRO
 ENV LANG C.UTF-8
 ENV LC_ALL C.UTF-8
 
+USER root
+
 RUN echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selections
 
 RUN apt-get update -qq && apt-get -qq install -y apt-utils gnupg2 wget ca-certificates lsb-release dirmngr build-essential
